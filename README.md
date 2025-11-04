@@ -7,6 +7,8 @@ A personal portfolio website showcasing my journey from learning HTML to buildin
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
+### **Preview**: [Live Demo](https://ansari-in.github.io/my-journey/)
+
 ## 📖 About
 
 This website documents my **4+ year journey** in web development, from creating simple HTML pages in 2020 to building complex full-stack applications with Next.js, Node.js, and MongoDB in 2025.
