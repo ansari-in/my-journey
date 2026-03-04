@@ -3,10 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ansari Intesab's complete web development journey from 2020 to 2025, featuring milestones, projects, deployments, and full-stack growth." />
+  <meta name="keywords" content="Ansari Intesab, web developer, full stack developer, journey, portfolio, next.js, php, mysql, wordpress, mern" />
+  <meta name="author" content="Ansari Intesab" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#16a34a" />
+  <link rel="canonical" href="https://intesab.live/about-me-english" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:title" content="Ansari Intesab — Biography & Journey" />
+  <meta property="og:description" content="A complete timeline of learning, building, hosting, and shipping real web projects from 2020 to 2025." />
+  <meta property="og:url" content="https://intesab.live/about-me-english" />
+  <meta property="og:site_name" content="Journey Archive" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=1200&q=80" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ansari Intesab — Biography & Journey" />
+  <meta name="twitter:description" content="Web development journey from beginner to project-driven full-stack builder." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=1200&q=80" />
   <title>Ansari Intesab — Biography & Journey</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ansari Intesab",
+      "url": "https://intesab.live/about-me-english",
+      "jobTitle": "Full-Stack Web Developer",
+      "sameAs": [
+        "https://github.com/ansari-in",
+        "https://studydocs.intesab.live/",
+        "https://ladkibahinyojana.intesab.live/"
+      ],
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Next.js", "Node.js", "MongoDB", "WordPress"]
+    }
+  </script>
 
   <style>
     :root {
@@ -20,6 +55,7 @@
       --accent-3: #ef4444;
       --accent-4: #ea580c;
       --accent-5: #84cc16;
+      --year-tag: #1f2937;
       --shadow: 0 22px 58px rgba(15, 23, 42, 0.12);
       --max: 1180px;
       --radius: 22px;
@@ -36,6 +72,7 @@
       --accent-3: #f87171;
       --accent-4: #fb923c;
       --accent-5: #a3e635;
+      --year-tag: #dbe6f8;
       --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
     }
 
@@ -70,11 +107,39 @@
       background-image: radial-gradient(rgba(0, 0, 0, 0.05) 0.5px, transparent 0.5px);
       background-size: 4px 4px;
       opacity: 0.2;
+      z-index: -2;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      right: -180px;
+      bottom: -160px;
+      width: 520px;
+      height: 520px;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 30% 30%, color-mix(in oklab, var(--accent-2) 52%, transparent) 0%, transparent 58%),
+        radial-gradient(circle at 68% 42%, color-mix(in oklab, var(--accent-1) 45%, transparent) 0%, transparent 60%),
+        radial-gradient(circle at 42% 72%, color-mix(in oklab, var(--accent-4) 42%, transparent) 0%, transparent 65%);
+      filter: blur(34px);
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
       z-index: -1;
     }
 
     body.dark::before {
       opacity: 0.12;
+    }
+
+    body.scrolled-after-hero::after {
+      opacity: 0.78;
+      transform: translateY(0);
+    }
+
+    body.dark.scrolled-after-hero::after {
+      opacity: 0.54;
     }
 
     .hero::before {
@@ -100,9 +165,9 @@
     }
 
     #bgCanvas {
-      position: fixed;
+      position: absolute;
       inset: 0;
-      z-index: -2;
+      z-index: 0;
       pointer-events: none;
       opacity: 0.55;
     }
@@ -137,11 +202,13 @@
       align-items: center;
       justify-content: space-between;
       padding: 10px 16px;
-      border: 1px solid color-mix(in oklab, var(--line) 80%, transparent);
+      border: 1px solid color-mix(in oklab, var(--line) 55%, transparent);
       border-radius: 999px;
-      backdrop-filter: blur(12px);
-      background: color-mix(in oklab, var(--paper) 84%, transparent);
-      transition: background 0.35s ease, border-color 0.35s ease;
+      backdrop-filter: blur(18px) saturate(145%);
+      -webkit-backdrop-filter: blur(18px) saturate(145%);
+      background: color-mix(in oklab, var(--paper) 64%, transparent);
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+      transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
     }
 
     .brand {
@@ -159,8 +226,8 @@
       width: 9px;
       height: 9px;
       border-radius: 50%;
-      background: var(--accent-3);
-      box-shadow: 0 0 0 6px color-mix(in oklab, var(--accent-3) 25%, transparent);
+      background: #22c55e;
+      box-shadow: 0 0 0 6px rgba(34, 197, 94, 0.28), 0 0 14px rgba(34, 197, 94, 0.66);
     }
 
     .nav {
@@ -178,13 +245,22 @@
       text-transform: uppercase;
       padding: 8px 12px;
       border-radius: 999px;
-      transition: background 0.25s ease, color 0.25s ease, opacity 0.25s;
+      background: color-mix(in oklab, var(--paper) 60%, transparent);
+      border: 1px solid color-mix(in oklab, var(--line) 85%, transparent);
+      transition: background 0.25s ease, color 0.25s ease, opacity 0.25s, border-color 0.25s ease, transform 0.25s ease;
     }
 
     .nav a:hover,
     .nav a.active {
       color: #f8fbff;
-      background: linear-gradient(90deg, var(--accent-1), var(--accent-3));
+      background: var(--accent-1);
+      border-color: color-mix(in oklab, var(--accent-1) 82%, #000 18%);
+      transform: translateY(-1px);
+    }
+
+    body.dark .topbar {
+      background: color-mix(in oklab, var(--paper) 54%, transparent);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.34);
     }
 
     .topbar-right {
@@ -218,10 +294,14 @@
       text-align: center;
       padding: 130px 0 80px;
       position: relative;
+      overflow: hidden;
+      isolation: isolate;
     }
 
     .hero-inner {
       max-width: 950px;
+      position: relative;
+      z-index: 2;
     }
 
     .eyebrow {
@@ -295,6 +375,7 @@
       letter-spacing: 0.16em;
       color: var(--muted);
       animation: float 2.6s ease-in-out infinite;
+      z-index: 2;
     }
 
     @keyframes float {
@@ -383,7 +464,7 @@
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.14em;
-      color: var(--accent-5);
+      color: var(--year-tag);
       margin-bottom: 8px;
       font-weight: 700;
     }
@@ -468,7 +549,7 @@
       top: 8px;
       bottom: 8px;
       width: 5px;
-      background: linear-gradient(180deg, var(--accent-2), var(--accent-3), var(--accent-4));
+      background: linear-gradient(180deg, var(--accent-1), var(--accent-5), var(--accent-2));
       border-radius: 99px;
       opacity: 0.8;
     }
@@ -629,7 +710,6 @@
   </style>
 </head>
 <body>
-  <canvas id="bgCanvas" aria-hidden="true"></canvas>
   <div class="progress" id="progress"></div>
 
   <header class="topbar">
@@ -649,6 +729,7 @@
 
   <main>
     <section class="hero" id="top">
+      <canvas id="bgCanvas" aria-hidden="true"></canvas>
       <div class="container hero-inner">
         <span class="eyebrow">Personal Biography • 2020 to 2025</span>
         <h1>Built from Curiosity, Shaped by Real Projects.</h1>
@@ -861,6 +942,7 @@
           Let’s connect for collaborations, internships, and freelance opportunities.
         </p>
         <a class="contact-btn" href="mailto:ansariintesab048@gmail.com">ansariintesab048@gmail.com</a>
+        <p style="margin-top:12px;font-size:.92rem;color:var(--muted);">GitHub: github.com/ansari-in • Focus: Full-stack apps, deployment workflows, and practical student tools.</p>
       </div>
     </section>
   </main>
@@ -870,6 +952,7 @@
     const sections = Array.from(document.querySelectorAll('main section[id]'));
     const progressBar = document.getElementById('progress');
     const themeToggle = document.getElementById('themeToggle');
+    const heroSection = document.getElementById('top');
 
     const savedTheme = localStorage.getItem('journey-theme');
     if (savedTheme === 'dark') {
@@ -899,6 +982,9 @@
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       progressBar.style.width = `${(winScroll / height) * 100}%`;
 
+      const glowTrigger = heroSection.offsetHeight * 0.55;
+      document.body.classList.toggle('scrolled-after-hero', winScroll > glowTrigger);
+
       let current = '';
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 150;
@@ -915,19 +1001,22 @@
       });
     });
 
+    const initialScroll = document.documentElement.scrollTop;
+    document.body.classList.toggle('scrolled-after-hero', initialScroll > heroSection.offsetHeight * 0.55);
+
     const canvas = document.getElementById('bgCanvas');
     const context = canvas.getContext('2d');
     const particles = [];
     const palette = ['#16a34a', '#f59e0b', '#ef4444', '#ea580c', '#84cc16', '#fde68a'];
 
     function resizeCanvas() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = heroSection.clientWidth;
+      canvas.height = heroSection.clientHeight;
     }
 
     function createParticles() {
       particles.length = 0;
-      const count = Math.max(26, Math.floor(window.innerWidth / 48));
+      const count = Math.max(18, Math.floor(canvas.width / 42));
       for (let i = 0; i < count; i += 1) {
         particles.push({
           x: Math.random() * canvas.width,
