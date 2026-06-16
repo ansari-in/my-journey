@@ -7,7 +7,7 @@ A personal portfolio website showcasing my journey from learning HTML to buildin
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-### **Preview**: [Live Demo](https://ansari-in.github.io/my-journey/)
+### **Preview**: [Live Demo](https://journey.intesab.me/)
 
 ## 📖 About
 
@@ -123,7 +123,7 @@ about-me-english/
 
 ## 🔗 Links
 
-- **Portfolio**: [Live Demo](https://ansari-in.github.io/my-journey/)
+- **Portfolio**: [Live Demo](https://journey.intesab.me/)
 - **GitHub**: [@ansari-in](https://github.com/ansari-in)
 - **Email**: ansariintesab048@gmail.com
 - **Phone**: +91 89832 45824
@@ -137,7 +137,6 @@ This project is open source and available for personal and educational use.
 I'm always interested in connecting with fellow developers, potential collaborators, or anyone interested in web development!
 
 - 📧 **Email**: [ansariintesab048@gmail.com](mailto:ansariintesab048@gmail.com)
-- 📱 **Phone**: +91 89832 45824
 - 📍 **Location**: Dhule, Maharashtra, India
 
 ## 🙏 Acknowledgments
